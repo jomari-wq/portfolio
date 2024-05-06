@@ -1,0 +1,367 @@
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+    font-size: larger;
+}
+
+nav ul {
+    display: flex;
+}
+
+a:hover {
+    color: firebrick;
+}
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,99,1) 4%, rgba(5,166,176,1) 41%, rgba(3,183,205,1) 83%, rgba(0,212,255,1) 100%);
+    
+}
+
+.name {
+    width: 830px;
+    font-size: xx-large;
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    color: black;
+    background-color: white;
+}
+
+img {
+    border: 10px solid black;
+    border-radius: 100px;
+    width: 500px;
+}
+
+.Welcome {
+    color: white;
+    font-size: 50px;
+}
+
+.quote {
+    color: white;
+    font-size: 20px;
+}
+
+.aboutpic {
+    border: 10px solid black;
+    border-radius: 100px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 100px;
+    text-align: left;
+    float: left;
+}
+
+.aboutme {
+    margin-top: 100px;
+    margin-left: 40%;
+    color: white;
+    font-size: 50px;
+    text-align: justify;
+
+}
+
+.my {
+    color: white;
+    font-size: 25px;
+    margin-top: 70px;
+    margin-left: 40%;
+    margin-right: 10%;
+
+}
+
+.left {
+    text-align: left;
+}
+.skill{
+    color: white;
+    font-size:  25px;
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 10px;
+    text-align: justify;
+    
+}
+.uno{
+    margin-right: 60px;
+}
+.aug{
+    margin-right: 60px;
+    margin-left: 70px;
+
+}
+.iam{
+    color: white;
+    font-size: 25px;
+    margin-top: 70px;
+    margin-left: 40%;
+    margin-right: 10%;
+    text-align: justify;
+}
+.physical{
+    margin-right: 60px;
+    margin-top: 70px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin: 4%;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%, rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-back img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .button {
+    --main-focus: #2d8cf0;
+    --font-color: #dedede;
+    --bg-color-sub: #222;
+    --bg-color: #323232;
+    --main-color: #dedede;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto; /* Centering horizontally */
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(21px);
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .button:hover {
+    background: var(--bg-color);
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+  .icons{
+    position: absolute;
+    bottom: 40px;
+    background: transparent;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icons a{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid lightblue;
+    border-radius: 50%;
+    font-size: 30px;
+    color: lightblue;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+  }
+    .icons a:hover{
+        color: #081b29;
+
+    }
+  
+  .icons a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: lightblue;
+    z-index: -1;
+    transition: .5s;
+    overflow: hidden;
+  }
+  .icons a:hover::before{
+    width: 100%;
+
+
+  }
+  
+.card {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto; /* Centering the card horizontally */
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.body {
+  padding: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering skill horizontally */
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  width: 120px;
+  font-size: 16px;
+  color: black;
+}
+
+.skill-level {
+  width: 160px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+
+}
+
+.skill-percent {
+  background-color: #333;
+  height: 100%;
+
+}
+
+.skill-percent-number {
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the container height to fill the viewport */
+}
+
+.upper-right {
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
